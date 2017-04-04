@@ -30,5 +30,6 @@ if [ $? -ne 0 ]; then
 	exit
 fi
 
+export DOTPATH
 make install
 
