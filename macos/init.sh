@@ -1,5 +1,6 @@
 #!/bin/bash
 
+DOTPATH=~/.dotfiles
 
 # linkage
 for f in .??*
