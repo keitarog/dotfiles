@@ -15,18 +15,20 @@ echo '
 
 # dowload and extract tarball
 curl -L $GITHUB_URL | tar xv -
+
+if [ -d "$DOTPATH" ]; then
+	echo "ERROR: ~/.dotfiles directory already exists"
+	exit
+fi
+
 mv -f dotfiles-master "$DOTPATH"
 
 # cd to dotpath
 cd $DOTPATH
 if [ $? -ne 0 ]; then
-	die "not found: $DOTPATH"
+	echo "ERROR: $DOTPATH not found"
+	exit
 fi
 
-# linkage
-for f in .??*
-do
-    [ "$f" = ".git" ] && continue
-    ln -snfv "$DOTPATH/$f" "$HOME/$f"
-done
+make install
 
