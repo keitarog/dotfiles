@@ -6,7 +6,7 @@ GITHUB_URL="https://github.com/keitarog/dotfiles/archive/master.tar.gz"
 echo WELCOME!
 
 # dowload and extract tarball
-curl $GITHUB_URL | tar xv -
+curl -L $GITHUB_URL | tar xv -
 mv -f dotfiles-master "$DOTPATH"
 
 # cd to dotpath
