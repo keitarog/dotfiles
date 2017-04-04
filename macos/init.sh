@@ -10,5 +10,5 @@ do
     ln -snfv "$DOTPATH/$f" "$HOME/$f"
 done
 
-bash init/*.sh
+bash macos/init/*.sh
 
