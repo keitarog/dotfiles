@@ -8,11 +8,11 @@ command_exists() {
 }
 
 detect_os() {
-	if [ "$OSTYPE" -eq "darwin"* ]; then
+	if [ "$OSTYPE" == "darwin"* ]; then
 		return "macos"
-	elif [ "$OSTYPE" -eq "linux"* ]; then
+	elif [ "$OSTYPE" == "linux"* ]; then
 		return "linux"
-	elif [ "$OSTYPE" -eq "bsd"* ]; then
+	elif [ "$OSTYPE" == "bsd"* ]; then
 		return "bsd"
 	fi
 	return "unknown"
