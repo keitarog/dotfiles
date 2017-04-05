@@ -2,7 +2,7 @@
 
 # deinit.sh
 
-. common.sh
+. script/common.sh
 
 # unlinkage
 for f in .??*
