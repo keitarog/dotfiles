@@ -20,7 +20,7 @@ do
 	ln -snfv "$DOTPATH/$f" "$HOME/$f"
 done
 
-. $(PLATFORM)/init/*.sh
+. $PLATFORM/init/*.sh
 
 write_log "Initialization complete"
 
