@@ -14,5 +14,4 @@ do
 	fi
 done
 
-rm -rf ~/.dotfiles
 
