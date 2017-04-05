@@ -31,7 +31,7 @@ set autoindent
 set smartindent
 
 " Plugins
-autocmd VimEnter * NERDTree
+autocmd VimEnter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
 " nerdcommenter
