@@ -20,7 +20,7 @@ if [ -d "$DOTPATH" ]; then
 	echo "Do you want to overwrite them? (Y/n)"
 	read INPUT
 	if [ "$INPUT" = "Y" ]; then
-		(cd "$DOTPATH" && make uninstall)
+		(cd "$DOTPATH" && make uninstall && cd "$HOME" && rm -rf "$DOTPATH")
 	else
 		echo "User interrupted"
 		exit

@@ -9,8 +9,6 @@ install:
 	@echo "Install complete"
 
 uninstall:
-	bash $(PLATFORM)/deinit.sh
-	@cd
-	rm -rf ~/.dotfiles
+	bash $(PLATFORM)/deinit.sh	
 	@echo "Uninstall complete"
 
