@@ -7,14 +7,16 @@ command_exists() {
 }
 
 detect_os() {
+	local L_OS
 	if [ "$OSTYPE" == "darwin"* ]; then
-		PLATFORM="macos"
+		L_OS="macos"
 	elif [ "$OSTYPE" == "linux"* ]; then
-		PLATFORM="linux"
+		L_OS="linux"
 	elif [ "$OSTYPE" == "bsd"* ]; then
-		PLATFORM="bsd"
+		L_OS="bsd"
 	fi
-	PLATFORM="unknown"
+	L_OS="unknown"
+	eval "$1='$L_OS'"
 }
 
 write_log() {

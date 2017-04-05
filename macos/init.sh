@@ -10,7 +10,7 @@ set -eu
 . script/common.sh
 
 # declared at common.sh
-detect_os
+detect_os PLATFORM
 
 # linkage
 for f in .??*
