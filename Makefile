@@ -6,9 +6,9 @@ all: $(TARGET)
 
 install:
 	bash $(PLATFORM)/init.sh
-	echo "Install complete"
+	@echo "Install complete"
 
 uninstall:
 	bash $(PLATFORM)/deinit.sh
-	echo "Uninstall complete"
+	@echo "Uninstall complete"
 
