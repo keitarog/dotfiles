@@ -8,11 +8,11 @@ command_exists() {
 
 detect_os() {
 	local L_OS
-	if [ "$OSTYPE" == "darwin"* ]; then
+	if [[ "$OSTYPE" == "darwin"* ]]; then
 		L_OS="macos"
-	elif [ "$OSTYPE" == "linux"* ]; then
+	elif [[ "$OSTYPE" == "linux"* ]]; then
 		L_OS="linux"
-	elif [ "$OSTYPE" == "bsd"* ]; then
+	elif [[ "$OSTYPE" == "bsd"* ]]; then
 		L_OS="bsd"
 	else
 		L_OS="unknown"
