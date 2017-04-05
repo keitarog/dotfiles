@@ -3,8 +3,6 @@
 DOTPATH=~/.dotfiles
 GITHUB_URL="https://github.com/keitarog/dotfiles/archive/master.tar.gz"
 
-WORKING_DIR="$(dirname "$(readlink -f "$0" || realpath "$0")")"
-
 # dowload and extract tarball
 curl -L $GITHUB_URL | tar xv -
 
@@ -21,9 +19,7 @@ if [ -d "$DOTPATH" ]; then
 	echo "Do you want to overwrite them? (Y/n)"
 	read INPUT
 	if [ "$INPUT" = [Y] ]; then
-		cd "$DOTPATH"
-		make uninstall
-		cd "$WORKING_DIR"
+		(cd "$DOTPATH" && make uninstall)
 	else
 		echo "User interrupted"
 		exit
