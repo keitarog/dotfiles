@@ -10,5 +10,5 @@ install:
 
 uninstall:
 	bash $(PLATFORM)/deinit.sh
-	@echo "Uninstall complete"
+	@(cd "$HOME" && echo "Uninstall complete")
 
