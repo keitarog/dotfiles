@@ -14,8 +14,9 @@ detect_os() {
 		L_OS="linux"
 	elif [ "$OSTYPE" == "bsd"* ]; then
 		L_OS="bsd"
+	else
+		L_OS="unknown"
 	fi
-	L_OS="unknown"
 	eval "$1='$L_OS'"
 }
 
