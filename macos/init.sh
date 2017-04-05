@@ -6,9 +6,11 @@ DOTPATH=~/.dotfiles
 trap 'echo ERROR: $0:$LINENO stopped; exit 1' ERR INT
 set -eu
 
+# includes common utility functions
 . script/common.sh
 
-PLATFORM=$(detect_os)
+# declared at common.sh
+detect_os
 
 # linkage
 for f in .??*

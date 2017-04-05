@@ -2,20 +2,19 @@
 
 # common.sh
 
-
 command_exists() {
 	type "$1" &> /dev/null ;
 }
 
 detect_os() {
 	if [ "$OSTYPE" == "darwin"* ]; then
-		return "macos"
+		PLATFORM="macos"
 	elif [ "$OSTYPE" == "linux"* ]; then
-		return "linux"
+		PLATFORM="linux"
 	elif [ "$OSTYPE" == "bsd"* ]; then
-		return "bsd"
+		PLATFORM="bsd"
 	fi
-	return "unknown"
+	PLATFORM="unknown"
 }
 
 write_log() {
