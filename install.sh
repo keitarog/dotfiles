@@ -12,7 +12,7 @@ echo '
 ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝'
 
 
-# dowload and extract tarball
+# download and extract tarball
 curl -L $GITHUB_URL | tar xv -
 
 if [ -d "$DOTPATH" ]; then
