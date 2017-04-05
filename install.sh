@@ -18,7 +18,7 @@ if [ -d "$DOTPATH" ]; then
 	echo "NOTICE: ~/.dotfiles directory already exists"
 	echo "Do you want to overwrite them? (Y/n)"
 	read INPUT
-	if [ "$INPUT" = [Y] ]; then
+	if [ "$INPUT" = "Y" ]; then
 		(cd "$DOTPATH" && make uninstall)
 	else
 		echo "User interrupted"
