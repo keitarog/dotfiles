@@ -6,7 +6,7 @@ DOTPATH=~/.dotfiles
 trap 'echo ERROR: $0:$LINENO stopped; exit 1' ERR INT
 set -eu
 
-. common.sh
+. script/common.sh
 
 PLATFORM=$(detect_os)
 
