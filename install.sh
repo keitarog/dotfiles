@@ -3,9 +3,6 @@
 DOTPATH=~/.dotfiles
 GITHUB_URL="https://github.com/keitarog/dotfiles/archive/master.tar.gz"
 
-# dowload and extract tarball
-curl -L $GITHUB_URL | tar xv -
-
 echo '
 ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗
 ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝██║██║     ██╔════╝██╔════╝
@@ -13,6 +10,10 @@ echo '
 ██║  ██║██║   ██║   ██║   ██╔══╝  ██║██║     ██╔══╝  ╚════██║
 ██████╔╝╚██████╔╝   ██║   ██║     ██║███████╗███████╗███████║
 ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝'
+
+
+# dowload and extract tarball
+curl -L $GITHUB_URL | tar xv -
 
 if [ -d "$DOTPATH" ]; then
 	echo "NOTICE: ~/.dotfiles directory already exists"
