@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'valloric/youcompleteme'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/twilight'
 
