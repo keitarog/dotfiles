@@ -5,8 +5,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'vim-scripts/twilight'
+Plug 'valloric/youcompleteme'
 Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/twilight'
 
 " Must be installed manually.
 " rename google.vim to cpp.vim
