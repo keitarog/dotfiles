@@ -20,12 +20,9 @@ do
 	ln -snfv "$DOTPATH/$f" "$HOME/$f"
 done
 
-echo $PLATFORM/init/*.sh
-
 for f in $PLATFORM/init/*.sh
 do
-  echo $f
-  bash "$f"
+  source "$f"
 done
 
 write_log "Initialization complete"
