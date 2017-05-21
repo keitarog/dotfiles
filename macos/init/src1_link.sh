@@ -1,6 +1,6 @@
 
-LINE="source ~/.dotfiles/etc/macos/.bash_profile"
-FILE="~/.bash_profile"
+ALINE="source ~/.dotfiles/etc/macos/.bash_profile"
+AFILE="~/.bash_profile"
 
-grep -qF "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
+grep -qF "$ALINE" $AFILE || echo "$ALINE" >> $AFILE
 
