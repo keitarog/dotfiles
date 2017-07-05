@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/twilight'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Must be installed manually.
 " rename google.vim to cpp.vim
