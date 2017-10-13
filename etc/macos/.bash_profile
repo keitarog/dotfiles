@@ -1,6 +1,5 @@
 
 alias ls="gls --color"
 
-PS1="\e[33m\w $ \e[39m"
-
+export PS1='\[\033[1;33m\]\w $ \[\033[0m\]'
 
