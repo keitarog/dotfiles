@@ -8,6 +8,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/twilight'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/fontsize'
 
 " Must be installed manually.
 " rename google.vim to cpp.vim
